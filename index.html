@@ -18,9 +18,15 @@
                 // add new items to the array
                 // the message is automatically added to our Firebase database!
                 $scope.addMessage = function() {
+                    var sSender = "none";
+                    try{
+                        sSender = $scope.google.displayName;
+                    }catch(err){
+                        console.log(err);
+                    }
                     $scope.messages.$add({
                         text: $scope.newMessageText,
-                        sender: $scope.google.displayName
+                        sender: sSender
                     });
                 };
                 $scope.login =function() {
