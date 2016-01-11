@@ -12,7 +12,7 @@
         <script>
             var app = angular.module("myApp", ["firebase"]);
             app.controller("myCtrl", function($scope, $firebaseArray, $firebaseAuth) {
-                var ref = new Firebase("https://dazzling-heat-1553.firebaseio.com/messages");
+                var ref = new Firebase("https://luminous-torch-9971.firebaseIO.com/messages");
                 // create a synchronized array
                 $scope.messages = $firebaseArray(ref);
                 // add new items to the array
