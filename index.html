@@ -18,7 +18,7 @@
                 // add new items to the array
                 // the message is automatically added to our Firebase database!
                 $scope.addMessage = function() {
-                    var sSender = "none";
+                    var sSender = "blah";
                     try{
                         sSender = $scope.google.displayName;
                     }catch(err){
@@ -57,3 +57,5 @@
 
     </body>
 </html>
+
+// "https://luminous-torch-9971.firebaseIO.com/messages"
